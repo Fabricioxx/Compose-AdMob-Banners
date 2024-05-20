@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ad_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp">
+
+        <ImageView
+            android:id="@+id/ad_icon"
+            android:layout_width="101dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="-13dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/ad_headline"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ad_body"
+            android:layout_alignEnd="@+id/ad_body"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="-9dp"
+            android:layout_toEndOf="@+id/ad_icon"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ad_advertiser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ad_call_to_action"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/ad_icon"
+            android:background="@android:color/holo_blue_dark"
+            android:padding="2dp"
+            android:text="@string/ad"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ad_body"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ad_call_to_action"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@+id/ad_advertiser"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/ad_call_to_action"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="-3dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/ad_icon"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:contentDescription="@string/call_to_action_button"
+            android:text="@string/instalar"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</com.google.android.gms.ads.nativead.NativeAdView>
