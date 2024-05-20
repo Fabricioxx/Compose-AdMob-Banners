@@ -222,7 +222,7 @@ fun AdMobNativeAd() {
             modifier = Modifier
                 .fillMaxWidth()
                 .height(150.dp)
-                .background(Color.White)
+                .background(color = Color.Transparent)
         )
     }
 
